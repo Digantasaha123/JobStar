@@ -99,6 +99,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# job user ---> model from JobPortal/models.py te (class/model)
+AUTH_USER_MODEL = 'JobPortalApp.Job_User'
+
 
 
 # Internationalization
