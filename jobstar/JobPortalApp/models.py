@@ -2,10 +2,10 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class Job_User(AbstractUser):
-   USER =  [
+    USER =  [
         ('Recruiter' , 'Recruiter'),
-        ('Seeker', 'Seeker')        
-    ]
+        ('Seeker', 'Seeker')
+        ]
     Fullname = models.CharField(max_length=100)
     Address = models.CharField(max_length=100)
     UserType = models.CharField(choices=USER, max_length=100)
