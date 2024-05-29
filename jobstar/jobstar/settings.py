@@ -11,9 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-##added manually * 2 
-from django.conf import settings
-from django.conf.urls.static import static
+
 
 
 
@@ -135,7 +133,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     "/var/www/static/",
-]
-urlpatterns = [
-    
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]   
