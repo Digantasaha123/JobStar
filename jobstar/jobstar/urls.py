@@ -19,7 +19,9 @@ from django.urls import path
 ##added manually * 2 
 from django.conf import settings
 from django.conf.urls.static import static
+from jobstar.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('signupPage/',signupPage, name = "signupPage")
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
