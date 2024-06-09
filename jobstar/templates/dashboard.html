@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="content">
+            <h1>Welcome </h1>  
+            <h1 style = 'color : orange'> <b>{{user.username}} </b></h1>
+            <div class="row">
+                <!-- Card Example -->
+                <div class="col-md-4">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Jobs Posted</h5>
+                            <p class="card-text">25</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Applicants</h5>
+                            <p class="card-text">150</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-info mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Messages</h5>
+                            <p class="card-text">12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Charts (Placeholder) -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Postings Over Time</h5>
+                            <div id="chart1" style="height: 250px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Applicants Growth</h5>
+                            <div id="chart2" style="height: 250px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+   

@@ -32,12 +32,26 @@ def signinPage(request):
         
         user = authenticate(username = username, password = password)
         if user:
-            
             login(request, user)
             return redirect('dashboard')
+        else :
+            return redirect('signinPage')
     
     return render(request, 'signin.html')
 
 def dashboard(request):
-    return render(request, 'dashboard.html')
     
+    return render(request, 'dashboard.html')
+
+def profile(request):
+    return render(request, 'profile.html')
+
+def AddJob(request):
+    return render(request, 'Recruiter/addjob.html')
+
+
+def JobList(request):
+    return render(request, 'joblist.html')
+
+def AppliedJob(request):
+    return render(request, 'Seeker/appliedjob.html')
