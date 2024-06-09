@@ -23,5 +23,6 @@ from jobstar.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('signupPage/',signupPage, name = "signupPage")
+    path('signupPage',signupPage, name = "signupPage"),
+    path('',signinPage, name = "signinPage"),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
