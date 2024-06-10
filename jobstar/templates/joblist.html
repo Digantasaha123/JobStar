@@ -1,1 +1,70 @@
-<h1>5</h1>
+{% extends "base.html" %}
+{% block content %}
+<table id="customers">
+    <tr>
+    <th>Job title</th>
+    <th>Company Name</th>
+    <th>Designation</th>
+    <th>Salary</th>
+    <th>Deadline</th>
+
+
+    <section class="job-list">
+        <div class="job-card">
+            <h2>Software Engineer</h2>
+            <p>Company: Innovatech Solutions</p>
+            <p>Location: San Francisco, CA</p>
+            <p>Date Posted: June 10, 2024</p>
+            {% if user.UserType == 'Recruiter' %}
+            <a href="#" class="apply-btn" background = "red">View Details</a>
+            {% elif  user.UserType == 'Seeker' %}
+            <a href="#" class="apply-btn" style = background = red >Apply now</a>
+            {% endif %}
+        </div>
+        <div class="job-card">
+            <h2>Data Analyst</h2>
+            <p>Company: DataCorp</p>
+            <p>Location: New York, NY</p>``
+            <p>Date Posted: June 9, 2024</p>
+            {% if user.UserType == 'Recruiter' %}
+            <a href="#" class="apply-btn" background = "red">View Details</a>
+            {% elif  user.UserType == 'Seeker' %}
+            <a href="#" class="apply-btn" style = background = red >Apply now</a>
+            {% endif %}
+        </div>
+        <div class="job-card">
+            <h2>Product Manager</h2>
+            <p>Company: Web Innovators</p>
+            <p>Location: Austin, TX</p>
+            <p>Date Posted: June 8, 2024</p>
+             {% if user.UserType == 'Recruiter' %}
+            <a href="#" class="apply-btn" background = "red">View Details</a>
+            {% elif  user.UserType == 'Seeker' %}
+            <a href="#" class="apply-btn" style = background = red >Apply now</a>
+            {% endif %}
+        </div>
+        <div class="job-card">
+            <h2>UI/UX Designer</h2>
+            <p>Company: Creative Minds</p>
+            <p>Location: Seattle, WA</p>
+            <p>Date Posted: June 7, 2024</p>
+            {% if user.UserType == 'Recruiter' %}
+            <a href="#" class="apply-btn" background = "red">View Details</a>
+            {% elif  user.UserType == 'Seeker' %}
+            <a href="#" class="apply-btn" style = background = red >Apply now</a>
+            {% endif %}
+        </div>
+    </section>
+    
+    {% comment %} </tr>
+        {%for i in jobdata %}
+        <td>{{i.ojbTitle}}</td>
+        <td>{{i.CompanyName}}</td>
+        <td>{{i.Designation}}</td>
+        <td>{{i.Salary}}</td>
+        <td>{{i.Deadline}}</td>
+        {% endfor %}
+    </tr> {% endcomment %}
+</table>
+
+{% endblock content %}

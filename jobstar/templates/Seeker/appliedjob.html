@@ -1,1 +1,35 @@
-<h1>applied jobs section</h1>
+{% extends "base.html" %}
+{% block content %}
+    <div class="applied-jobs-container">
+        <header class="applied-jobs-header">
+            <h1>Applied Jobs</h1>
+        </header>
+        
+        <section class="applied-job-list">
+            <div class="job-card">
+                <h2>Frontend Developer</h2>
+                <p>Company: Tech Innovators</p>
+                <p>Location: San Francisco, CA</p>
+                <p>Date Applied: May 20, 2024</p>
+                <p>Status: Interview Scheduled</p>
+                <a href="#" class="btn cancel-btn">Cancel Application</a>
+            </div>
+            <div class="job-card">
+                <h2>Data Scientist</h2>
+                <p>Company: DataCorp</p>
+                <p>Location: New York, NY</p>
+                <p>Date Applied: May 22, 2024</p>
+                <p>Status: Application Submitted</p>
+                <a href="#" class="btn cancel-btn">Cancel Application</a>
+            </div>
+            <div class="job-card">
+                <h2>Backend Developer</h2>
+                <p>Company: Web Solutions</p>
+                <p>Location: Austin, TX</p>
+                <p>Date Applied: May 25, 2024</p>
+                <p>Status: Under Review</p>
+                <a href="#" class="btn cancel-btn">Cancel Application</a>
+            </div>
+        </section>
+    </div>
+{% endblock content %}

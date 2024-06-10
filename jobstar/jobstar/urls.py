@@ -30,5 +30,7 @@ urlpatterns = [
     path('AddJob/', AddJob, name = 'AddJob'),
     path('AppliedJob/', AppliedJob, name = 'AppliedJob'),
     path('AppliedJob/', AppliedJob, name = 'AppliedJob'),
-    path('jobist/', JobList, name = 'JobList'),
+    path('JobList/', JobList, name = 'JobList'),
+    path('logoutpage/', logoutpage, name = 'logoutpage'),
+    
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

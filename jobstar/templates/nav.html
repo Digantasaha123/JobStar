@@ -10,17 +10,31 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url "dashboard" %}">Dashboard</a>
                 </li>
+                {%if user.UserType == 'Recruiter' %}
                 <li class="nav-item">
                     <a class="nav-link" href=" {% url "AddJob" %} ">Add Job</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Job List </a>{% url "JobList" %}
-                </li>
+                {% elif user.UserType == 'Seeker' %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url "AppliedJob" %}">Applied Jobs</a>
                 </li>
+                
+                {% endif %}
+
+
+
+
                 <li class="nav-item">
-                    <a class="nav-link" href="">Profile</a>{% url "profile" %}
+                    <a class="nav-link" href="{% url "JobList" %}">Job List </a>
+                </li>
+
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url "profile" %}">Profile</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url "logoutpage" %}">Log Out</a>
                 </li>
             </ul>
         </div>

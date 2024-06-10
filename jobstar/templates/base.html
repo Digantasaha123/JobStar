@@ -33,6 +33,282 @@
         .card {
             margin-bottom: 2rem;
         }
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+          }
+          
+          #customers tr:nth-child(even){background-color: #f2f2f2;}
+          
+          #customers tr:hover {background-color: #ddd;}
+          
+          #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+          }
+          body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        .profile-header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 3em 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 1em;
+        }
+        
+        .profile-name {
+            font-size: 2.5em;
+            margin: 0.5em 0 0.2em;
+        }
+        
+        .job-title {
+            font-size: 1.2em;
+            margin: 0.2em 0 2em;
+            font-style: italic;
+        }
+        
+        section {
+            margin: 2em auto;
+            padding: 2em;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skills-list li {
+            background-color: #4CAF50;
+            color: white;
+            margin: 0.5em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+        
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .dashboard-container {
+            padding: 2em;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        section {
+            background-color: white;
+            padding: 1.5em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h2 {
+            margin-bottom: 1em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 1.5em;
+        }
+        
+        ul li h3 {
+            margin: 0.5em 0;
+        }
+        .applied-jobs-container {
+            padding: 2em;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .applied-jobs-header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .applied-job-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        
+        .job-card {
+            background-color: white;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .job-card h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        
+        .job-card p {
+            margin: 0.5em 0;
+        }
+        .joblist-container {
+            padding: 2em;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .joblist-header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .job-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        
+        .job-card {
+            background-color: white;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .job-card h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        
+        .job-card p {
+            margin: 0.5em 0;
+        }
+        
+        .apply-btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1em;
+        }
+        
+        .apply-btn:hover {
+            background-color: #45a049;
+        }
+        .applied-jobs-container {
+            padding: 2em;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .applied-jobs-header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .applied-job-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        
+        .job-card {
+            background-color: white;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .job-card h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        
+        .job-card p {
+            margin: 0.5em 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1em;
+            transition: background-color 0.3s;
+        }
+        
+        .cancel-btn {
+            background-color: #FF4C4C;
+            color: white;
+        }
+        
+        .cancel-btn:hover {
+            background-color: #FF0000;
+        }
+                 
     </style>
 </head>
 <body>
@@ -42,40 +318,40 @@
     
     {% endblock content %}
  <!-- Bootstrap JS -->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
- <!-- Chart.js -->
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
- <script>
-     // Example chart script
-     const ctx1 = document.getElementById('chart1').getContext('2d');
-     const chart1 = new Chart(ctx1, {
-         type: 'line',
-         data: {
-             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-             datasets: [{
-                 label: 'Job Postings',
-                 data: [12, 19, 3, 5, 2, 3, 9],
-                 borderColor: 'rgba(75, 192, 192, 1)',
-                 borderWidth: 1
-             }]
-         }
-     });
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Example chart script
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        const chart1 = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Job Postings',
+                    data: [12, 19, 3, 5, 2, 3, 9],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            }
+        });
 
-     const ctx2 = document.getElementById('chart2').getContext('2d');
-     const chart2 = new Chart(ctx2, {
-         type: 'bar',
-         data: {
-             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-             datasets: [{
-                 label: 'Applicants',
-                 data: [12, 15, 8, 5, 6, 9, 10],
-                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                 borderColor: 'rgba(54, 162, 235, 1)',
-                 borderWidth: 1
-             }]
-         }
-     });
- </script>
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        const chart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Applicants',
+                    data: [12, 15, 8, 5, 6, 9, 10],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            }
+        });
+    </script>
 </body>
 </html>

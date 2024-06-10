@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # job user ---> model from JobPortal/models.py te (class/model)
 AUTH_USER_MODEL = 'JobPortalApp.Job_User'
 
-
+LOGIN_URL = 'signinPage'
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/

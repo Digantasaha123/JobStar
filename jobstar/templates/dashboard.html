@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
         <div class="content">
-            <h1>Welcome </h1>  
-            <h1 style = 'color : orange'> <b>{{user.username}} </b></h1>
+            <h1><b>Welcome</b> </h1>  
+            <h1 style = 'color : orange'> <b>{{user.Fullname}} </b></h1>
+            <h1 style = 'color : Green'> <b>{{user.UserType}} </b></h1>
             <div class="row">
                 <!-- Card Example -->
                 <div class="col-md-4">
@@ -34,22 +35,66 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Job Postings Over Time</h5>
-                            <div id="chart1" style="height: 250px;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Applicants Growth</h5>
-                            <div id="chart2" style="height: 250px;"></div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Dashboard</h1>
+        </header>
+        
+        <section class="recent-jobs">
+            <h2>Recent Job Postings</h2>
+            <ul>
+                <li>
+                    <h3>Frontend Developer</h3>
+                    <p>Company: Tech Innovators</p>
+                    <p>Location: San Francisco, CA</p>
+                    <p>Date Posted: June 1, 2024</p>
+                </li>
+                <li>
+                    <h3>Data Scientist</h3>
+                    <p>Company: DataCorp</p>
+                    <p>Location: New York, NY</p>
+                    <p>Date Posted: June 5, 2024</p>
+                </li>
+                <li>
+                    <h3>Backend Developer</h3>
+                    <p>Company: Web Solutions</p>
+                    <p>Location: Austin, TX</p>
+                    <p>Date Posted: June 8, 2024</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="application-status">
+            <h2>Application Status</h2>
+            <ul>
+                <li>
+                    <h3>Frontend Developer at Tech Innovators</h3>
+                    <p>Status: Interview Scheduled</p>
+                </li>
+                <li>
+                    <h3>Data Scientist at DataCorp</h3>
+                    <p>Status: Application Submitted</p>
+                </li>
+                <li>
+                    <h3>Backend Developer at Web Solutions</h3>
+                    <p>Status: Under Review</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="activity-summary">
+            <h2>Activity Summary</h2>
+            <p>You have applied to 3 jobs in the past week.</p>
+            <p>You have 1 interview scheduled.</p>
+            <p>You have 2 applications under review.</p>
+        </section>
     </div>
     {% endblock content %}
    
