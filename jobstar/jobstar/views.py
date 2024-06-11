@@ -50,7 +50,7 @@ def profile(request):
     return render(request, 'profile.html')
 
 @login_required
-def AddJob(request):
+def AddJob(request):    
     if request.method == 'POST':
         JobTitle = request.POST.get('JobTitle')
         companyName = request.POST.get('companyName')
